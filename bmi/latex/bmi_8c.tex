@@ -1,0 +1,128 @@
+\hypertarget{bmi_8c}{\section{src/print\-\_\-results/bmi/bmi.c File Reference}
+\label{bmi_8c}\index{src/print\-\_\-results/bmi/bmi.\-c@{src/print\-\_\-results/bmi/bmi.\-c}}
+}
+{\ttfamily \#include $<$print\-\_\-results/bmi/bmi.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{bmi_8c_abbcd056f916bed4a1e4311d05aac4176}{bmi} (float height, float weight)
+\item 
+const char $\ast$ \hyperlink{bmi_8c_af3b8570369199f490f311c6ecc9729a0}{corporature} (float height, float weight, char sex)
+\item 
+float \hyperlink{bmi_8c_af0010a3feb3e003d4ef36a6804530d56}{overweight} (float height, float weight, char sex)
+\item 
+float \hyperlink{bmi_8c_aa31692591ceab4b8eb07b237545f8e35}{underweight} (float height, float weight, char sex)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{bmi_8c_abbcd056f916bed4a1e4311d05aac4176}{\index{bmi.\-c@{bmi.\-c}!bmi@{bmi}}
+\index{bmi@{bmi}!bmi.c@{bmi.\-c}}
+\subsubsection[{bmi}]{\setlength{\rightskip}{0pt plus 5cm}float bmi (
+\begin{DoxyParamCaption}
+\item[{float}]{height, }
+\item[{float}]{weight}
+\end{DoxyParamCaption}
+)}}\label{bmi_8c_abbcd056f916bed4a1e4311d05aac4176}
+Calcola l'indice di massa corporea 
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em weight} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 30 of file bmi.\-c.
+
+\hypertarget{bmi_8c_af3b8570369199f490f311c6ecc9729a0}{\index{bmi.\-c@{bmi.\-c}!corporature@{corporature}}
+\index{corporature@{corporature}!bmi.c@{bmi.\-c}}
+\subsubsection[{corporature}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ corporature (
+\begin{DoxyParamCaption}
+\item[{float}]{height, }
+\item[{float}]{weight, }
+\item[{char}]{sex}
+\end{DoxyParamCaption}
+)}}\label{bmi_8c_af3b8570369199f490f311c6ecc9729a0}
+Calcola se il soggetto è in sovrappeso, in normopeso o in sottopeso \begin{DoxyPrecond}{Precondition}
+il carattere del sesso deve essere un F o una M 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em weight} & \\
+\hline
+{\em sex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 52 of file bmi.\-c.
+
+\hypertarget{bmi_8c_af0010a3feb3e003d4ef36a6804530d56}{\index{bmi.\-c@{bmi.\-c}!overweight@{overweight}}
+\index{overweight@{overweight}!bmi.c@{bmi.\-c}}
+\subsubsection[{overweight}]{\setlength{\rightskip}{0pt plus 5cm}float overweight (
+\begin{DoxyParamCaption}
+\item[{float}]{height, }
+\item[{float}]{weight, }
+\item[{char}]{sex}
+\end{DoxyParamCaption}
+)}}\label{bmi_8c_af0010a3feb3e003d4ef36a6804530d56}
+Calcola l'entità del sovrappeso \begin{DoxyPrecond}{Precondition}
+il carattere del sesso deve essere un F o una M 
+
+l'indice di massa corporea deve essere maggiore di 24 per gli uomini e maggiore di 22 per le donne 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em weight} & \\
+\hline
+{\em sex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 68 of file bmi.\-c.
+
+\hypertarget{bmi_8c_aa31692591ceab4b8eb07b237545f8e35}{\index{bmi.\-c@{bmi.\-c}!underweight@{underweight}}
+\index{underweight@{underweight}!bmi.c@{bmi.\-c}}
+\subsubsection[{underweight}]{\setlength{\rightskip}{0pt plus 5cm}float underweight (
+\begin{DoxyParamCaption}
+\item[{float}]{height, }
+\item[{float}]{weight, }
+\item[{char}]{sex}
+\end{DoxyParamCaption}
+)}}\label{bmi_8c_aa31692591ceab4b8eb07b237545f8e35}
+Calcola l'entità del sottopeso \begin{DoxyPrecond}{Precondition}
+il carattere del sesso deve essere un F o una M 
+
+l'indice di massa corporea deve essere minore di 20 per gli uomini e minore di 18 per le donne 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+{\em weight} & \\
+\hline
+{\em sex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 84 of file bmi.\-c.
+
