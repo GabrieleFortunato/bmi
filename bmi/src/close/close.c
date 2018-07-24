@@ -7,8 +7,8 @@
 
 #include "close.h"
 
-static const char* CLS = "CLS";
+static const char* CLEAR_SCREEN = "CLS";
 
 void close(){
-	system(CLS);
+	system(CLEAR_SCREEN);
 }
