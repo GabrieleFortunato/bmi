@@ -7,7 +7,6 @@
 
 #include <print_results/bmi/bmi.h>
 
-static const char F = 'F';
 static const char M = 'M';
 static const char* EXTRA_UNDER_WEIGHT = "Soggetto in forte sottopeso";
 static const char* UNDER_WEIGHT = "Soggetto in leggero sottopeso";
@@ -23,12 +22,8 @@ static const int MAX_BMI_M = 24;
 static const int EXTRA_MAX_BMI_F = 28;
 static const int EXTRA_MAX_BMI_M = 30;
 
-static bool is_valid_sex(char sex){
-	return sex == M || sex == F;
-}
-
 float bmi(float height, float weight){
-	return weight/height/height;
+	return weight / height / height;
 }
 
 static const char* corporature_M(float height, float weight){

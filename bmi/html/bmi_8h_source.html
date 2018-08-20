@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_88bde7b368e533f0226a2c82d85d770f.html">src</a></li><li class="navelem"><a class="el" href="dir_7ca8696bbbce5b99ec7391360bbeab40.html">print_results</a></li><li class="navelem"><a class="el" href="dir_2711346c4bb590990b26d14db0d66bc7.html">bmi</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_910c9481b1840c12c235249c6635c244.html">src</a></li><li class="navelem"><a class="el" href="dir_22ab31c090b8067ee2c2a7145d27abd4.html">print_results</a></li><li class="navelem"><a class="el" href="dir_1373856ea3fdcaaf841f291ecd601f7a.html">bmi</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,24 +98,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_PRINT_RESULTS_BMI_BMI_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="bmi_8c_html_aa31692591ceab4b8eb07b237545f8e35"><div class="ttname"><a href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a></div><div class="ttdeci">float underweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00084">bmi.c:84</a></div></div>
-<div class="ttc" id="bmi_8c_html_abbcd056f916bed4a1e4311d05aac4176"><div class="ttname"><a href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a></div><div class="ttdeci">float bmi(float height, float weight)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00030">bmi.c:30</a></div></div>
-<div class="ttc" id="bmi_8c_html_af0010a3feb3e003d4ef36a6804530d56"><div class="ttname"><a href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a></div><div class="ttdeci">float overweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00068">bmi.c:68</a></div></div>
-<div class="ttc" id="bmi_8c_html_af3b8570369199f490f311c6ecc9729a0"><div class="ttname"><a href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a></div><div class="ttdeci">const char * corporature(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00052">bmi.c:52</a></div></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;is_valid_sex/is_valid_sex.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_PRINT_RESULTS_BMI_BMI_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="bmi_8c_html_aa31692591ceab4b8eb07b237545f8e35"><div class="ttname"><a href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a></div><div class="ttdeci">float underweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00079">bmi.c:79</a></div></div>
+<div class="ttc" id="bmi_8c_html_abbcd056f916bed4a1e4311d05aac4176"><div class="ttname"><a href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a></div><div class="ttdeci">float bmi(float height, float weight)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00025">bmi.c:25</a></div></div>
+<div class="ttc" id="bmi_8c_html_af0010a3feb3e003d4ef36a6804530d56"><div class="ttname"><a href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a></div><div class="ttdeci">float overweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00063">bmi.c:63</a></div></div>
+<div class="ttc" id="bmi_8c_html_af3b8570369199f490f311c6ecc9729a0"><div class="ttname"><a href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a></div><div class="ttdeci">const char * corporature(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00047">bmi.c:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 23 2018 17:11:49 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 10:01:20 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

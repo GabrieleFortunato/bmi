@@ -8,6 +8,10 @@
 
 #include <print_results/print_results.h>
 
+static const int MIN_BMI_F = 18;
+static const int MIN_BMI_M = 20;
+static const int MAX_BMI_F = 22;
+static const int MAX_BMI_M = 24;
 static const char M = 'M';
 static const char* PRINT_UNDERWEIGHT = "\nEntita' del sottoppeso: kg %.1f";
 static const char* PRINT_OVERWEIGHT = "\nEntita' del sovrappeso: kg %.1f";
@@ -31,14 +35,18 @@ static void print_underweight(float height, float weight, char sex) {
 
 static void print_results_M(float height, float weight, char sex) {
 	print_bmi_corporature(height, weight, sex);
-	if (bmi(height, weight) > 24 || bmi(height, weight) < 20)
-			(bmi(height, weight) > 24) ? print_overweight(height, weight, sex) : print_underweight(height, weight, sex);
+	if (bmi(height, weight) > MAX_BMI_M || bmi(height, weight) < MIN_BMI_M)
+		(bmi(height, weight) > MAX_BMI_M) ?
+				print_overweight(height, weight, sex) :
+				print_underweight(height, weight, sex);
 }
 
 static void print_results_F(float height, float weight, char sex) {
 	print_bmi_corporature(height, weight, sex);
-	if (bmi(height, weight) > 22 || bmi(height, weight) < 18)
-		(bmi(height, weight) > 22) ? print_overweight(height, weight, sex) : print_underweight(height, weight, sex);
+	if (bmi(height, weight) > MAX_BMI_F || bmi(height, weight) < MIN_BMI_F)
+		(bmi(height, weight) > MAX_BMI_F) ?
+				print_overweight(height, weight, sex) :
+				print_underweight(height, weight, sex);
 }
 
 void print_results(char sex, float weight, float height){

@@ -10,6 +10,7 @@
 
 #include <ctype.h>
 #include <stdio.h>
+#include "is_valid_sex/is_valid_sex.h"
 
 /**
  * Inserimento da tastiera dell'altezza

@@ -10,6 +10,7 @@
 
 #include <assert.h>
 #include <stdbool.h>
+#include "is_valid_sex/is_valid_sex.h"
 
 /**
  * Calcola l'indice di massa corporea
@@ -32,7 +33,8 @@ const char* corporature(float height, float weight, char sex);
 /**
  * Calcola l'entità del sovrappeso
  * @pre il carattere del sesso deve essere un F o una M
- * @pre l'indice di massa corporea deve essere maggiore di 24 per gli uomini e maggiore di 22 per le donne
+ * @pre l'indice di massa corporea deve essere maggiore di 24 per gli uomini
+ *      e maggiore di 22 per le donne
  * @param height
  * @param weight
  * @param sex
@@ -43,7 +45,8 @@ float overweight(float height, float weight, char sex);
 /**
  * Calcola l'entità del sottopeso
  * @pre il carattere del sesso deve essere un F o una M
- * @pre l'indice di massa corporea deve essere minore di 20 per gli uomini e minore di 18 per le donne
+ * @pre l'indice di massa corporea deve essere minore di 20 per gli uomini
+ * 		e minore di 18 per le donne
  * @param height
  * @param weight
  * @param sex
