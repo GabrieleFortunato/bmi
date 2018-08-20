@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="bmi_8h.html#af3b8570369199f490f311c6ecc9729a0">   47</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    assert(is_valid_sex(sex));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    assert(<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> (sex == M) ?</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            corporature_M(height, weight) : corporature_F(height, weight);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="bmi_8h.html#af0010a3feb3e003d4ef36a6804530d56">   63</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex){</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    assert(is_valid_sex(sex));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    assert(<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> (sex == M) ?</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            overweight_M(height, weight) : overweight_F(height, weight);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
@@ -165,19 +165,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="bmi_8h.html#aa31692591ceab4b8eb07b237545f8e35">   79</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a>(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight, <span class="keywordtype">char</span> sex){</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    assert(is_valid_sex(sex));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    assert(<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex));</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> (sex == M) ?</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            underweight_M(height, weight) : underweight_F(height, weight);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="ttc" id="bmi_8c_html_aa31692591ceab4b8eb07b237545f8e35"><div class="ttname"><a href="bmi_8c.html#aa31692591ceab4b8eb07b237545f8e35">underweight</a></div><div class="ttdeci">float underweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00079">bmi.c:79</a></div></div>
 <div class="ttc" id="bmi_8c_html_abbcd056f916bed4a1e4311d05aac4176"><div class="ttname"><a href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a></div><div class="ttdeci">float bmi(float height, float weight)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00025">bmi.c:25</a></div></div>
+<div class="ttc" id="is__valid__sex_8c_html_a7b1309e387b48ef9611e6b343c34355c"><div class="ttname"><a href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a></div><div class="ttdeci">bool is_valid_sex(char sex)</div><div class="ttdef"><b>Definition:</b> <a href="is__valid__sex_8c_source.html#l00013">is_valid_sex.c:13</a></div></div>
 <div class="ttc" id="bmi_8h_html"><div class="ttname"><a href="bmi_8h.html">bmi.h</a></div></div>
 <div class="ttc" id="bmi_8c_html_af0010a3feb3e003d4ef36a6804530d56"><div class="ttname"><a href="bmi_8c.html#af0010a3feb3e003d4ef36a6804530d56">overweight</a></div><div class="ttdeci">float overweight(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00063">bmi.c:63</a></div></div>
 <div class="ttc" id="bmi_8c_html_af3b8570369199f490f311c6ecc9729a0"><div class="ttname"><a href="bmi_8c.html#af3b8570369199f490f311c6ecc9729a0">corporature</a></div><div class="ttdeci">const char * corporature(float height, float weight, char sex)</div><div class="ttdef"><b>Definition:</b> <a href="bmi_8c_source.html#l00047">bmi.c:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 20 2018 10:01:20 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 11:14:51 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -10,6 +10,11 @@
 
 #include <stdbool.h>
 
+/**
+ * Verifica che il carattere che identifica il sesso sia una M o una F
+ * @param sex
+ * @return
+ */
 bool is_valid_sex(char sex);
 
 #endif /* SRC_IS_VALID_SEX_IS_VALID_SEX_H_ */
