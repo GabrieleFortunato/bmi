@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> underweight_F(<span class="keywordtype">float</span> height, <span class="keywordtype">float</span> weight){</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    assert(<a class="code" href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a>(height, weight) &gt; MIN_BMI_F);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    assert(<a class="code" href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a>(height, weight) &lt; MIN_BMI_F);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (MIN_BMI_F - <a class="code" href="bmi_8c.html#abbcd056f916bed4a1e4311d05aac4176">bmi</a>(height, weight)) * height * height;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 11:12:25 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 12:48:05 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
