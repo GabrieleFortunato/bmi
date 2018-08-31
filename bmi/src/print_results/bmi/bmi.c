@@ -72,7 +72,7 @@ static float underweight_M(float height, float weight){
 }
 
 static float underweight_F(float height, float weight){
-	assert(bmi(height, weight) > MIN_BMI_F);
+	assert(bmi(height, weight) < MIN_BMI_F);
 	return (MIN_BMI_F - bmi(height, weight)) * height * height;
 }
 

@@ -32,12 +32,25 @@ void test_corporature(){
 	CU_ASSERT_STRING_EQUAL(corporature(1.68,66,'F'),"Soggetto in leggero sovrappeso");
 }
 
+void test_overweight(){
+	CU_ASSERT_EQUAL((int)overweight(1.68,88,'M'),20);
+	CU_ASSERT_EQUAL((int)overweight(1.68,88,'F'),25);
+}
+
+void test_underweight(){
+	CU_ASSERT_EQUAL((int)underweight(1.68,50,'M'),6);
+	CU_ASSERT_EQUAL((int)underweight(1.68,50,'F'),0);
+}
+
 int main(void) {
 	CU_initialize_registry();
 	CU_pSuite pSuite_A = CU_add_suite("SUITE BMI",init_suite_default,clear_suite_default);
 	CU_add_test(pSuite_A,"test of bmi()",test_bmi);
 	CU_pSuite pSuite_B = CU_add_suite("SUITE CORP",init_suite_default,clear_suite_default);
 	CU_add_test(pSuite_B,"test of corporature()",test_corporature);
+	CU_pSuite pSuite_C = CU_add_suite("SUITE OVER-UNDERWEIGHT",init_suite_default,clear_suite_default);
+	CU_add_test(pSuite_C,"test of overweight()",test_overweight);
+	CU_add_test(pSuite_C,"test of underweight()",test_underweight);
 	CU_basic_set_mode(CU_BRM_VERBOSE);
 	CU_basic_run_tests();
 	CU_cleanup_registry();
