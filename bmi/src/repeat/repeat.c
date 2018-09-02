@@ -23,6 +23,5 @@ int get_repeat() {
 }
 
 bool repeat(){
-	int repeat = get_repeat();
-	return repeat == ONE;
+	return get_repeat() == ONE;
 }

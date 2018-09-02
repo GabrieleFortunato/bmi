@@ -23,6 +23,7 @@ void test_bmi(){
 	CU_ASSERT_EQUAL((int)bmi(1.68,88),31);
 	CU_ASSERT_EQUAL((int)bmi(1.68,82),29);
 	CU_ASSERT_EQUAL((int)bmi(1.68,72),25);
+	CU_ASSERT_EQUAL((int)bmi(1.68,50),17);
 }
 
 void test_corporature(){
