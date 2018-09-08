@@ -733,7 +733,7 @@ WARN_LOGFILE =
 # spaces.
 # Note: If this tag is empty the current directory is searched.
 
-INPUT = src/close src/get_data src/intro src/print_results src/print_results/bmi src/repeat src/is_valid_sex 
+INPUT = src/close src/get_data src/intro src/is_valid_sex src/print_results src/print_results/bmi src/repeat 
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
