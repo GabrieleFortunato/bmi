@@ -13,7 +13,7 @@ static const char* SPEC_INT = "%d";
 static const char* ASK_REPEAT =
 		"\n\nCalcolare un altro indice di massa corporea?\n(1=si, 2=no) ";
 
-int get_repeat() {
+static int get_repeat() {
 	int repeat;
 	do {
 		printf(ASK_REPEAT);

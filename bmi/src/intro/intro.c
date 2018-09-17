@@ -7,16 +7,16 @@
 
 #include "intro.h"
 
-static const char* CLEAR_SCREEN = "CLS";
+static const char* CLS = "CLS";
 static const char* INTRO =
 		"\n"
 		"=================================\n"
 		"PROGRAMMA DI ANALISI E DI CALCOLO\n"
 		"DELL'INDICE DI MASSA CORPOREA\n"
 		"=================================\n"
-		"a cura di Gabriele Fortunato\n\n";
+		"a cura di Gabriele Fortunato\n";
 
 void intro(){
-	system(CLEAR_SCREEN);
-	printf(INTRO);
+	system(CLS);
+	puts(INTRO);
 }
