@@ -8,8 +8,8 @@
 #ifndef SRC_PRINT_RESULTS_PRINT_RESULTS_H_
 #define SRC_PRINT_RESULTS_PRINT_RESULTS_H_
 
-#include <print_results/bmi/bmi.h>
 #include <stdio.h>
+#include "print_results/bmi/bmi.h"
 
 /**
  * Stampa a video i risultati
@@ -17,6 +17,6 @@
  * @param weight
  * @param height
  */
-void print_results(char sex, float weight, float height);
+void print_results(float height, float weight, char sex);
 
 #endif /* SRC_PRINT_RESULTS_PRINT_RESULTS_H_ */

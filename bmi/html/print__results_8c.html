@@ -94,19 +94,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a491e0595f5b925c7876dd509a65a823e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__results_8c.html#a491e0595f5b925c7876dd509a65a823e">print_results</a> (char sex, float weight, float height)</td></tr>
-<tr class="separator:a491e0595f5b925c7876dd509a65a823e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2a83c364681b24764aaa6b023d46b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__results_8c.html#a6f2a83c364681b24764aaa6b023d46b7">print_over_underweight_M</a> (float height, float weight, char sex)</td></tr>
+<tr class="separator:a6f2a83c364681b24764aaa6b023d46b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac320c6652106236a3ecca53b2ba50a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__results_8c.html#ac320c6652106236a3ecca53b2ba50a5c">print_over_underweight_F</a> (float height, float weight, char sex)</td></tr>
+<tr class="separator:ac320c6652106236a3ecca53b2ba50a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0df25a76e9451bd4a414ccb88ea8ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__results_8c.html#aea0df25a76e9451bd4a414ccb88ea8ee">print_results</a> (float height, float weight, char sex)</td></tr>
+<tr class="separator:aea0df25a76e9451bd4a414ccb88ea8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a491e0595f5b925c7876dd509a65a823e"></a>
+<a class="anchor" id="ac320c6652106236a3ecca53b2ba50a5c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print_results </td>
+          <td class="memname">void print_over_underweight_F </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>sex</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -117,8 +121,80 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="print__results_8c_source.html#l00048">48</a> of file <a class="el" href="print__results_8c_source.html">print_results.c</a>.</p>
+
+<p>References <a class="el" href="bmi_8c_source.html#l00025">bmi()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f2a83c364681b24764aaa6b023d46b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_over_underweight_M </td>
+          <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="print__results_8c_source.html#l00036">36</a> of file <a class="el" href="print__results_8c_source.html">print_results.c</a>.</p>
+
+<p>References <a class="el" href="bmi_8c_source.html#l00025">bmi()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea0df25a76e9451bd4a414ccb88ea8ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_results </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sex</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -137,14 +213,14 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="print__results_8c_source.html#l00052">52</a> of file <a class="el" href="print__results_8c_source.html">print_results.c</a>.</p>
+<p>Definition at line <a class="el" href="print__results_8c_source.html#l00060">60</a> of file <a class="el" href="print__results_8c_source.html">print_results.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2018 18:49:15 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 08:42:26 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

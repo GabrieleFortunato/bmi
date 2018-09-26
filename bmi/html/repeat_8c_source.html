@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ASK_REPEAT =</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="stringliteral">&quot;\n\nCalcolare un altro indice di massa corporea?\n(1=si, 2=no) &quot;</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="repeat_8c.html#a632c3d1bd932c9113d166cac59d29dda">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="repeat_8c.html#a632c3d1bd932c9113d166cac59d29dda">get_repeat</a>() {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> get_repeat() {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="repeat_8c.html#ac7058264851b1479e01129febff7d689">repeat</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">do</span> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        printf(ASK_REPEAT);</div>
@@ -111,15 +111,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="repeat_8h.html#ac7058264851b1479e01129febff7d689">   25</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="repeat_8c.html#ac7058264851b1479e01129febff7d689">repeat</a>(){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="repeat_8c.html#a632c3d1bd932c9113d166cac59d29dda">get_repeat</a>() == ONE;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> get_repeat() == ONE;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="ttc" id="repeat_8h_html"><div class="ttname"><a href="repeat_8h.html">repeat.h</a></div></div>
-<div class="ttc" id="repeat_8c_html_a632c3d1bd932c9113d166cac59d29dda"><div class="ttname"><a href="repeat_8c.html#a632c3d1bd932c9113d166cac59d29dda">get_repeat</a></div><div class="ttdeci">int get_repeat()</div><div class="ttdef"><b>Definition:</b> <a href="repeat_8c_source.html#l00016">repeat.c:16</a></div></div>
 <div class="ttc" id="repeat_8c_html_ac7058264851b1479e01129febff7d689"><div class="ttname"><a href="repeat_8c.html#ac7058264851b1479e01129febff7d689">repeat</a></div><div class="ttdeci">bool repeat()</div><div class="ttdef"><b>Definition:</b> <a href="repeat_8c_source.html#l00025">repeat.c:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2018 18:49:15 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 08:42:24 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -95,55 +95,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="get__data_8h.html">get_data.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> EOS = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SPEC_CHAR = <span class="stringliteral">&quot;%c&quot;</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_SEX = <span class="stringliteral">&quot;Inserisci il sesso (M-F)&gt; &quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SPEC_FLOAT = <span class="stringliteral">&quot;%f&quot;</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_WEIGTH = <span class="stringliteral">&quot;Inserisci il peso&gt; kg &quot;</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_HEIGHT = <span class="stringliteral">&quot;\nInserisci l&#39;altezza&gt; cm &quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> HUNDRED = 100.0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> ZERO = 0.0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="get__data_8h.html#ac5efe83df30aea19656d0cc02d2e6f58">   19</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="get__data_8c.html#ac5efe83df30aea19656d0cc02d2e6f58">get_height</a>(){</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    fflush(stdin);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> height = ZERO;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    printf(INSERT_HEIGHT);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    scanf(SPEC_FLOAT, &amp;height);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    height = height / HUNDRED;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> height;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="get__data_8h.html#a27be4fbcd11dfdf453fdb87660cc9952">   28</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="get__data_8c.html#a27be4fbcd11dfdf453fdb87660cc9952">get_weight</a>(){</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    fflush(stdin);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">float</span> weight = ZERO;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    printf(INSERT_WEIGTH);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    scanf(SPEC_FLOAT, &amp;weight);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> weight;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> insert_sex(<span class="keywordtype">char</span> sex) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    printf(INSERT_SEX);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    scanf(SPEC_CHAR, &amp;sex);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    sex = toupper(sex);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> sex;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="get__data_8h.html#a5800a9e149aff849e994280d74411dd4">   43</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="get__data_8c.html#a5800a9e149aff849e994280d74411dd4">get_sex</a>(){</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    fflush(stdin);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">char</span> sex = EOS;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex))</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        sex = insert_sex(sex);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* PRINT_NOT_VALID_SEX =</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="stringliteral">&quot;\nCarattere identificativo del sesso non valido!\n&quot;</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> EOS = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SPEC_CHAR = <span class="stringliteral">&quot;%c&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_SEX = <span class="stringliteral">&quot;Inserisci il sesso (M-F)&gt; &quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SPEC_FLOAT = <span class="stringliteral">&quot;%f&quot;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_WEIGTH = <span class="stringliteral">&quot;Inserisci il peso&gt; kg &quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* INSERT_HEIGHT = <span class="stringliteral">&quot;\nInserisci l&#39;altezza&gt; cm &quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> HUNDRED = 100;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> ZERO = 0.0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="get__data_8h.html#ac5efe83df30aea19656d0cc02d2e6f58">   21</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="get__data_8c.html#ac5efe83df30aea19656d0cc02d2e6f58">get_height</a>(){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">float</span> height = ZERO;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    printf(INSERT_HEIGHT);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    scanf(SPEC_FLOAT, &amp;height);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> height / HUNDRED;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="get__data_8h.html#a27be4fbcd11dfdf453fdb87660cc9952">   29</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="get__data_8c.html#a27be4fbcd11dfdf453fdb87660cc9952">get_weight</a>(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">float</span> weight = ZERO;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    printf(INSERT_WEIGTH);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    scanf(SPEC_FLOAT, &amp;weight);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> weight;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> print_not_valid_sex(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    printf(PRINT_NOT_VALID_SEX);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span> insert_sex(<span class="keywordtype">char</span> sex) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    printf(INSERT_SEX);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    scanf(SPEC_CHAR, &amp;sex);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    sex = toupper(sex);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        print_not_valid_sex();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> sex;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="ttc" id="get__data_8c_html_a5800a9e149aff849e994280d74411dd4"><div class="ttname"><a href="get__data_8c.html#a5800a9e149aff849e994280d74411dd4">get_sex</a></div><div class="ttdeci">char get_sex()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00043">get_data.c:43</a></div></div>
-<div class="ttc" id="get__data_8c_html_ac5efe83df30aea19656d0cc02d2e6f58"><div class="ttname"><a href="get__data_8c.html#ac5efe83df30aea19656d0cc02d2e6f58">get_height</a></div><div class="ttdeci">float get_height()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00019">get_data.c:19</a></div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="get__data_8h.html#a5800a9e149aff849e994280d74411dd4">   51</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="get__data_8c.html#a5800a9e149aff849e994280d74411dd4">get_sex</a>(){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span> sex = EOS;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a>(sex))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        sex = insert_sex(sex);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> sex;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="ttc" id="get__data_8c_html_a5800a9e149aff849e994280d74411dd4"><div class="ttname"><a href="get__data_8c.html#a5800a9e149aff849e994280d74411dd4">get_sex</a></div><div class="ttdeci">char get_sex()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00051">get_data.c:51</a></div></div>
+<div class="ttc" id="get__data_8c_html_ac5efe83df30aea19656d0cc02d2e6f58"><div class="ttname"><a href="get__data_8c.html#ac5efe83df30aea19656d0cc02d2e6f58">get_height</a></div><div class="ttdeci">float get_height()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00021">get_data.c:21</a></div></div>
 <div class="ttc" id="get__data_8h_html"><div class="ttname"><a href="get__data_8h.html">get_data.h</a></div></div>
 <div class="ttc" id="is__valid__sex_8c_html_a7b1309e387b48ef9611e6b343c34355c"><div class="ttname"><a href="is__valid__sex_8c.html#a7b1309e387b48ef9611e6b343c34355c">is_valid_sex</a></div><div class="ttdeci">bool is_valid_sex(char sex)</div><div class="ttdef"><b>Definition:</b> <a href="is__valid__sex_8c_source.html#l00013">is_valid_sex.c:13</a></div></div>
-<div class="ttc" id="get__data_8c_html_a27be4fbcd11dfdf453fdb87660cc9952"><div class="ttname"><a href="get__data_8c.html#a27be4fbcd11dfdf453fdb87660cc9952">get_weight</a></div><div class="ttdeci">float get_weight()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00028">get_data.c:28</a></div></div>
+<div class="ttc" id="get__data_8c_html_a27be4fbcd11dfdf453fdb87660cc9952"><div class="ttname"><a href="get__data_8c.html#a27be4fbcd11dfdf453fdb87660cc9952">get_weight</a></div><div class="ttdeci">float get_weight()</div><div class="ttdef"><b>Definition:</b> <a href="get__data_8c_source.html#l00029">get_data.c:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2018 18:49:15 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 08:42:24 for bmi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

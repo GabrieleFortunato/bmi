@@ -15,7 +15,7 @@
 #include "print_results/print_results.h"
 #include "repeat/repeat.h"
 
-static const char* FILE_MODE = "w";
+static const char* FILE_MODE = "a";
 static const char* ACCESS_FILE_NAME = "accessi.txt";
 
 void print_access(){
@@ -27,8 +27,11 @@ void print_access(){
 void calculate_bmi(){
 	do{
 		intro();
-		print_results(get_sex(), get_weight(), get_height());
-	}while (repeat());
+		float height = get_height();
+		float weight = get_weight();
+		char sex = get_sex();
+		print_results(height,weight,sex);
+	} while (repeat());
 }
 
 int main(void) {

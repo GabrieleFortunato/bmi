@@ -7,13 +7,15 @@
 
 #include "get_data.h"
 
+static const char* PRINT_NOT_VALID_SEX =
+		"\nCarattere identificativo del sesso non valido!\n";
 static const char EOS = '\0';
 static const char* SPEC_CHAR = "%c";
 static const char* INSERT_SEX = "Inserisci il sesso (M-F)> ";
 static const char* SPEC_FLOAT = "%f";
 static const char* INSERT_WEIGTH = "Inserisci il peso> kg ";
 static const char* INSERT_HEIGHT = "\nInserisci l'altezza> cm ";
-static const double HUNDRED = 100.0;
+static const int HUNDRED = 100;
 static const double ZERO = 0.0;
 
 float get_height(){
@@ -21,8 +23,7 @@ float get_height(){
 	float height = ZERO;
 	printf(INSERT_HEIGHT);
 	scanf(SPEC_FLOAT, &height);
-	height = height / HUNDRED;
-	return height;
+	return height / HUNDRED;
 }
 
 float get_weight(){
@@ -33,10 +34,17 @@ float get_weight(){
 	return weight;
 }
 
+static void print_not_valid_sex(){
+	printf(PRINT_NOT_VALID_SEX);
+}
+
 static char insert_sex(char sex) {
+	fflush(stdin);
 	printf(INSERT_SEX);
 	scanf(SPEC_CHAR, &sex);
 	sex = toupper(sex);
+	if (!is_valid_sex(sex))
+		print_not_valid_sex();
 	return sex;
 }
 
