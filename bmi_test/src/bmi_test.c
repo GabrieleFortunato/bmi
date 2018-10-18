@@ -22,7 +22,7 @@ int clear_suite_default(){
 
 void test_is_valid_sex(){
 	CU_ASSERT_TRUE(is_valid_sex('F'));
-	CU_ASSERT_TRUE(is_valid_sex('M'))
+	CU_ASSERT_TRUE(is_valid_sex('M'));
 	CU_ASSERT_FALSE(is_valid_sex('f'));
 	CU_ASSERT_FALSE(is_valid_sex('m'));
 	CU_ASSERT_FALSE(is_valid_sex('A'));
@@ -55,8 +55,8 @@ void test_overweight(){
 }
 
 void test_underweight(){
-	CU_ASSERT_EQUAL((int)underweight(1.68,50,'M'),6);
-	CU_ASSERT_EQUAL((int)underweight(1.68,50,'F'),0);
+	CU_ASSERT_EQUAL((int)underweight(1.68,50,'M'),0);
+	CU_ASSERT_EQUAL((int)underweight(1.55,37,'F'),1);
 }
 
 int main(void) {

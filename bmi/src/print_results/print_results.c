@@ -5,8 +5,7 @@
  *      Author: gabriele
  */
 
-
-#include <print_results/print_results.h>
+#include "print_results.h"
 
 static const int MIN_BMI_F = 18;
 static const int MIN_BMI_M = 20;
@@ -33,7 +32,7 @@ static void print_underweight(float height, float weight, char sex) {
 			underweight(height, weight, sex));
 }
 
-void print_over_underweight_M(float height, float weight, char sex) {
+static void print_overweight_underweight_M(float height, float weight, char sex) {
 	(bmi(height, weight) > MAX_BMI_M) ?
 			print_overweight(height, weight, sex) :
 			print_underweight(height, weight, sex);
@@ -42,10 +41,10 @@ void print_over_underweight_M(float height, float weight, char sex) {
 static void print_results_M(float height, float weight, char sex) {
 	print_bmi_corporature(height, weight, sex);
 	if (bmi(height, weight) > MAX_BMI_M || bmi(height, weight) < MIN_BMI_M)
-		print_over_underweight(height, weight, sex);
+		print_overweight_underweight_M(height, weight, sex);
 }
 
-void print_over_underweight_F(float height, float weight, char sex) {
+static void print_overweight_underweight_F(float height, float weight, char sex) {
 	(bmi(height, weight) > MAX_BMI_F) ?
 			print_overweight(height, weight, sex) :
 			print_underweight(height, weight, sex);
@@ -54,7 +53,7 @@ void print_over_underweight_F(float height, float weight, char sex) {
 static void print_results_F(float height, float weight, char sex) {
 	print_bmi_corporature(height, weight, sex);
 	if (bmi(height, weight) > MAX_BMI_F || bmi(height, weight) < MIN_BMI_F)
-		print_over_underweight_F(height, weight, sex);
+		print_overweight_underweight_F(height, weight, sex);
 }
 
 void print_results(float height, float weight, char sex){
