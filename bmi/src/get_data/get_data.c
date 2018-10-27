@@ -11,10 +11,10 @@ static const char* PRINT_NOT_VALID_SEX =
 		"\nCarattere identificativo del sesso non valido!\n";
 static const char EOS = '\0';
 static const char* SPEC_CHAR = "%c";
-static const char* INSERT_SEX = "Inserisci il sesso (M-F) ---> ";
+static const char* INSERT_SEX = "Inserisci il sesso (M-F)> ";
 static const char* SPEC_FLOAT = "%f";
-static const char* INSERT_WEIGTH = "Inserisci il peso ---> kg ";
-static const char* INSERT_HEIGHT = "\nInserisci l'altezza ---> cm ";
+static const char* INSERT_WEIGTH = "Inserisci il peso> kg ";
+static const char* INSERT_HEIGHT = "\nInserisci l'altezza> cm ";
 static const int HUNDRED = 100;
 static const double ZERO = 0.0;
 
