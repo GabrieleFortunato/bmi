@@ -25,18 +25,16 @@ void print_access(){
 }
 
 void calculate_bmi(){
-	do{
 		intro();
 		float height = get_height();
 		float weight = get_weight();
 		char sex = get_sex();
 		print_results(height,weight,sex);
-	} while (repeat());
+		(repeat()) ? calculate_bmi() : close();
 }
 
 int main(void) {
 	print_access();
 	calculate_bmi();
-	close();
 	return EXIT_SUCCESS;
 }

@@ -25,7 +25,7 @@ float get_height();
 float get_weight();
 
 /**
- * Inserimento da tastiera del sesso
+ * Inserimento da tastiera del carattere del sesso
  * @return
  */
 char get_sex();

@@ -55,8 +55,8 @@ void test_overweight(){
 }
 
 void test_underweight(){
-	CU_ASSERT_EQUAL((int)underweight(1.68,50,'M'),0);
-	CU_ASSERT_EQUAL((int)underweight(1.55,37,'F'),1);
+	CU_ASSERT_EQUAL((int)underweight(1.68,50,'M'),6);
+	CU_ASSERT_EQUAL((int)underweight(1.55,37,'F'),6);
 }
 
 int main(void) {
