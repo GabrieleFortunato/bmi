@@ -23,13 +23,11 @@ static void print_bmi_corporature(float height, float weight, char sex) {
 }
 
 static void print_overweight(float height, float weight, char sex) {
-	printf(PRINT_OVERWEIGHT,
-			overweight(height, weight, sex));
+	printf(PRINT_OVERWEIGHT, overweight(height, weight, sex));
 }
 
 static void print_underweight(float height, float weight, char sex) {
-	printf(PRINT_UNDERWEIGHT,
-			underweight(height, weight, sex));
+	printf(PRINT_UNDERWEIGHT, underweight(height, weight, sex));
 }
 
 static void print_overweight_underweight_M(float height, float weight, char sex) {
